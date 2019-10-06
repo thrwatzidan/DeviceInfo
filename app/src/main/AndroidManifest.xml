@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dev.thrwat_zidan.deviceinfo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/ico"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ico"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GeneralActivity" />
+        <activity android:name=".DeviceActivity" />
+        <activity android:name=".DisplayActivity" />
+        <activity android:name=".BatteryActivity" />
+        <activity android:name=".UserAppActivity" />
+        <activity android:name=".SystemAppActivity" />
+        <activity android:name=".MemoryActivity" />
+        <activity android:name=".CPUActivity" />
+        <activity android:name=".SensorActivity" />
+        <activity android:name=".SimActivity" />
+        <activity android:name=".AppsActivity" />
+    </application>
+
+</manifest>
